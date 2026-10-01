@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontlane Motors Auto Repair Company - Executive Vehicle Restoration</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#E53E3E',
+                            darkred: '#9B2C2C',
+                            charcoal: '#0F172A',
+                            slate: '#1E293B',
+                            gold: '#D97706',
+                            silver: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-red-600 selection:text-white min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center text-white text-2xl font-black shadow-lg shadow-red-900/40 group-hover:scale-105 transition">
+                    <i class="fa-solid fa-car-burst"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-extrabold tracking-tight font-heading text-white block leading-none">FRONTLANE <span class="text-red-500">MOTORS</span></span>
+                    <span class="text-[10px] sm:text-xs text-slate-400 font-semibold tracking-widest uppercase">Auto Repair & Collision Center</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#ceo-section" class="hover:text-red-400 transition">CEO Desk</a>
+                <a href="#showcase" class="hover:text-red-400 transition">Before & After</a>
+                <a href="#services" class="hover:text-red-400 transition">Services</a>
+                <a href="#estimator" class="hover:text-red-400 transition">Cost Estimator</a>
+                <a href="#contact" class="hover:text-red-400 transition">Contact</a>
+            </nav>
+            <div class="hidden sm:flex items-center gap-3">
+                <button id="openModalBtn" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-semibold text-sm shadow-lg shadow-red-600/30 transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone-volume animate-pulse"></i><span>Book with CEO</span>
+                </button>
+            </div>
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 py-4 space-y-3">
+            <a href="#ceo-section" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-slate-800">CEO Desk</a>
+            <a href="#showcase" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-slate-800">Before & After Showcase</a>
+            <a href="#services" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-slate-800">Services</a>
+            <a href="#estimator" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-slate-800">Cost Estimator</a>
+            <a href="#contact" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-slate-800">Contact & Location</a>
+            <button id="openModalBtnMobile" class="w-full mt-2 py-3 rounded-xl bg-red-600 text-white font-bold flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone-volume"></i> Direct Booking with CEO
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative py-16 sm:py-24 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-red-600/15 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs sm:text-sm font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span> Premium Automotive Engineering
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight text-white leading-tight">
+                        Precision Car Restoration & Repair Under <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-500">Executive Care</span>
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        At <strong class="text-white font-semibold">Frontlane Motors</strong>, we bring wrecked, dented, and damaged vehicles back to factory showroom perfection.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#showcase" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold border border-slate-700 flex items-center justify-center gap-3">View Transformations <i class="fa-solid fa-arrow-down text-red-400"></i></a>
+                        <a href="#estimator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-red-600 to-red-700 text-white font-bold shadow-xl shadow-red-600/25 flex items-center justify-center gap-2"><i class="fa-solid fa-calculator"></i> Get Repair Estimate</a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl p-2 bg-gradient-to-b from-slate-700/50 to-slate-900/80 border border-slate-700/60 shadow-2xl overflow-hidden">
+                        <div class="relative h-96 rounded-2xl overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?auto=format&fit=crop&w=1000&q=80" alt="Executive Auto Repair" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=Frontlane+Motors'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-black/30"></div>
+                            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-panel flex items-center justify-between">
+                                <div><p class="text-xs text-red-400 font-semibold uppercase">Chief Executive Officer</p><p class="text-base font-bold text-white">Mr. David Osioni Imoto</p></div>
+                                <button class="openModalTrigger px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white text-xs font-bold">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Section -->
+    <section id="ceo-section" class="py-16 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 rounded-3xl border border-slate-800 p-8 sm:p-12 relative overflow-hidden">
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5 lg:col-span-4 flex flex-col items-center text-center">
+                        <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-2xl p-1.5 bg-gradient-to-tr from-red-600 via-amber-500 to-red-800 shadow-xl mb-4">
+                            <div class="w-full h-full rounded-xl bg-slate-900 overflow-hidden flex flex-col items-center justify-center p-4">
+                                <i class="fa-solid fa-user-tie text-6xl text-slate-400 mb-2"></i><span class="text-xs font-bold text-red-400 uppercase">Executive Desk</span>
+                            </div>
+                            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-xs font-extrabold uppercase px-4 py-1 rounded-full">Founder & CEO</div>
+                        </div>
+                        <h3 class="text-2xl font-black text-white font-heading mt-2">Mr. David Osioni Imoto</h3>
+                        <p class="text-slate-400 text-sm">CEO, Frontlane Motors Auto Repair Company</p>
+                    </div>
+                    <div class="md:col-span-7 lg:col-span-8 space-y-5 text-center md:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-heading">"Every car that leaves Frontlane Motors carries my personal stamp of perfection."</h2>
+                        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center text-white text-2xl"><i class="fa-solid fa-phone"></i></div>
+                                <div><span class="text-xs uppercase font-bold text-slate-400">Book Directly With CEO</span><a href="tel:08037308101" class="block text-xl sm:text-2xl font-black text-white hover:text-red-400 font-heading">0803 730 8101</a></div>
+                            </div>
+                            <button class="openModalTrigger px-6 py-3 rounded-xl bg-red-600 text-white font-bold text-sm"><i class="fa-solid fa-calendar-check"></i> Book Directly</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase -->
+    <section id="showcase" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-white font-heading">Interactive Before & After Restorations</h2>
+                <p class="text-slate-400 mt-3">Drag the slider to see the transformation.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button data-filter="all" class="filter-btn active-filter px-5 py-2 rounded-xl text-xs font-bold uppercase bg-red-600 text-white">All Works</button>
+                <button data-filter="collision" class="filter-btn px-5 py-2 rounded-xl text-xs font-bold uppercase bg-slate-900 text-slate-400 border border-slate-800">Collision & Body</button>
+                <button data-filter="paint" class="filter-btn px-5 py-2 rounded-xl text-xs font-bold uppercase bg-slate-900 text-slate-400 border border-slate-800">Paint & Scratch</button>
+                <button data-filter="engine" class="filter-btn px-5 py-2 rounded-xl text-xs font-bold uppercase bg-slate-900 text-slate-400 border border-slate-800">Engine & Mechanical</button>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8" id="showcaseGrid">
+                <!-- Cards - JS will handle slider -->
+                <div class="showcase-card collision bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden">
+                    <div class="p-4 border-b border-slate-800 flex justify-between"><h3 class="font-bold text-white">Mercedes E-Class</h3><span class="px-2 py-1 rounded bg-red-500/20 text-red-400 text-xs uppercase">Full Body Work</span></div>
+                    <div class="comparison-container h-80" data-start="50"><img src="https://images.unsplash.com/photo-1599256872237-5dcc0fbe9668?auto=format&fit=crop&w=1000&q=80" alt="Before" class="w-full h-full object-cover"><div class="img-after"><img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1000&q=80" alt="After" class="w-full h-full object-cover"></div><div class="slider-handle"><div class="slider-button"><i class="fa-solid fa-arrows-left-right text-xs"></i></div></div></div>
+                </div>
+                <div class="showcase-card paint bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden">
+                    <div class="p-4 border-b border-slate-800 flex justify-between"><h3 class="font-bold text-white">BMW M4 Paint Repair</h3><span class="px-2 py-1 rounded bg-amber-500/20 text-amber-400 text-xs uppercase">Custom Paint</span></div>
+                    <div class="comparison-container h-80" data-start="50"><img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80" alt="Before" class="w-full h-full object-cover"><div class="img-after"><img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80" alt="After" class="w-full h-full object-cover"></div><div class="slider-handle"><div class="slider-button"><i class="fa-solid fa-arrows-left-right text-xs"></i></div></div></div>
+                </div>
+                <div class="showcase-card collision bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden">
+                    <div class="p-4 border-b border-slate-800 flex justify-between"><h3 class="font-bold text-white">Range Rover Restoration</h3><span class="px-2 py-1 rounded bg-blue-500/20 text-blue-400 text-xs uppercase">Frame & Fender</span></div>
+                    <div class="comparison-container h-80" data-start="50"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80" alt="Before" class="w-full h-full object-cover"><div class="img-after"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80" alt="After" class="w-full h-full object-cover"></div><div class="slider-handle"><div class="slider-button"><i class="fa-solid fa-arrows-left-right text-xs"></i></div></div></div>
+                </div>
+                <div class="showcase-card engine bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden">
+                    <div class="p-4 border-b border-slate-800 flex justify-between"><h3 class="font-bold text-white">Toyota Engine Overhaul</h3><span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 text-xs uppercase">Engine Work</span></div>
+                    <div class="comparison-container h-80" data-start="50"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1000&q=80" alt="Before" class="w-full h-full object-cover"><div class="img-after"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80" alt="After" class="w-full h-full object-cover"></div><div class="slider-handle"><div class="slider-button"><i class="fa-solid fa-arrows-left-right text-xs"></i></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimator, Services, Contact - minimal placeholder to make links work -->
+    <section id="services" class="py-20 bg-slate-900 border-y border-slate-800 text-center"><h2 class="text-3xl font-black text-white">Our Services</h2><p class="text-slate-400 mt-2">Collision Repair, Custom Paint, Engine Diagnostics, Ceramic Coating</p></section>
+    <section id="estimator" class="py-20 bg-slate-950 text-center">
+        <h2 class="text-3xl font-black text-white">Quick Cost Estimator</h2>
+        <div class="max-w-xl mx-auto mt-6 p-6 rounded-2xl bg-slate-900 border border-slate-800">
+            <select id="serviceSelect" class="w-full p-3 rounded-xl bg-slate-800 text-white mb-3"><option value="50000">Minor Dent - ₦50k</option><option value="150000">Full Paint - ₦150k</option><option value="300000">Collision Repair - ₦300k</option><option value="120000">Engine Service - ₦120k</option></select>
+            <p class="text-lg text-white">Estimated: <span id="estimateOutput" class="font-black text-red-400">₦50,000</span></p>
+        </div>
+    </section>
+    <section id="contact" class="py-20 bg-slate-900 text-center border-t border-slate-800"><h2 class="text-3xl font-black text-white">Contact Frontlane Motors</h2><p class="text-slate-400 mt-2">Call CEO: <a href="tel:08037308101" class="text-red-400 font-bold">0803 730 8101</a></p></section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" id="modalBackdrop"></div>
+        <div class="relative max-w-md mx-auto mt-20 p-8 rounded-3xl bg-slate-900 border border-slate-700 shadow-2xl">
+            <button id="closeModalBtn" class="absolute top-4 right-4 text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <h3 class="text-2xl font-black text-white">Book with CEO</h3>
+            <p class="text-sm text-slate-400 mt-1">Mr. David Osioni Imoto will call you back within 30 minutes.</p>
+            <form id="bookingForm" class="mt-6 space-y-4">
+                <input type="text" placeholder="Your Name" required class="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-white">
+                <input type="tel" placeholder="Phone Number" required class="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-white">
+                <select class="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-white"><option>Collision Repair</option><option>Paint Job</option><option>Engine Repair</option></select>
+                <button type="submit" class="w-full py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold">Confirm Booking - Call 0803 730 8101</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="py-10 bg-slate-950 border-t border-slate-800 text-center text-slate-500 text-sm">
+        © 2025 Frontlane Motors Auto Repair Company. All Rights Reserved.
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
